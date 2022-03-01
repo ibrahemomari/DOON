@@ -1,0 +1,49 @@
+@import "../../assets/styles/variables.style.scss";
+
+.qualification-section {
+    position: relative;
+  margin-top: -19.2em;
+  .container {
+      overflow: hidden;
+      z-index: 5;
+    padding: 0;
+    max-width: 100%;
+    .row:nth-child(1) {
+      margin-bottom: 3em;
+    }
+    .row {
+      .col-xl-6 {
+        text-align: center;
+        .qualification-title{
+            color: $blood-color;
+        }
+        .qualification-data {
+          .qualification-path {
+            .qualification-rounder {
+            }
+            .qualification-line {
+            }
+          }
+        }
+      }
+      .education-container {
+        border-right: 1px solid $blood-color;
+      }
+      .work-container {
+        border-left: 1px solid $blood-color;
+      }
+    }
+  }
+  video {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: luminosity;
+    // transform: rotateY(180deg);
+  }
+}

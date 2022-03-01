@@ -1,0 +1,68 @@
+@import "../assets/styles/variables.style.scss";
+.para-Image-container {
+  // border: 1px solid red;
+  position: relative;
+  max-width: 100% !important;
+  padding: 0 !important;
+  //   background-color: black;
+  background: url("./253796 (5).png");
+  background-size: 100% 100%;
+  height: 100vh;
+  background-attachment: local;
+  filter: hue-rotate(140deg) grayscale(90%) opacity(0.8);
+
+  img {
+    width: 100%;
+    filter: opacity(1) grayscale(100%);
+  }
+}
+.scroll-down-container {
+  // border: 1px solid red;
+  max-width: 100%;
+  // z-index: 10000;
+transition:all 1s;
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .btn {
+      background-color: transparent;
+      border: none;
+      animation: scrollBtn 2s infinite ease-in-out both;
+      z-index: 1;
+      &:active,
+      &:focus {
+        box-shadow: none;
+      }
+      svg {
+        font-weight: 800;
+        font-size: 2em;
+        margin: 0 1em;
+        transform: rotate(135deg) ;
+        filter: drop-shadow(-30px 30px 10px rgba($blood-color, 0.8));
+      }
+    }
+  }
+}
+.para-rocket-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  height: 100vh;
+}
+
+.rocket-img {
+  width: 200px;
+  // transform: rotate(-45deg) !important;
+  filter: grayscale(100%);
+}
+
+@keyframes scrollBtn {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}

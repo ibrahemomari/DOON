@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables.style.scss";
+
+.skills-section {
+  background-color: $section-color-alt;
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+  .skills-item-container {
+    padding: 0 1em 5em 0em;
+    .col-xl-4 {
+      text-align: center;
+      margin-bottom: 1em;
+      transition: all 1s;
+      cursor: pointer;
+      &:hover {
+        span {
+          color: rgb(236, 155, 155);
+        }
+        .progress {
+          box-shadow: 0 0 10px rgba($color: $blood-color, $alpha: 1);
+        }
+      }
+      span {
+        transition: all 0.2s;
+        font-weight: 600;
+      }
+      .progress {
+        transition: all 0.2s;
+      }
+    }
+  }
+}

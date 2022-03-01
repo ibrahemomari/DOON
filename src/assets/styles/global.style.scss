@@ -1,0 +1,29 @@
+@import "./variables.style.scss";
+html,
+body,
+section {
+  scroll-behavior: smooth;
+  background-color: black;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  .section-title {
+    text-align: center;
+    h2 {
+      font-family: $title-font;
+      font-size: $title-size;
+      span {
+        color: $blood-color;
+      }
+    }
+  }
+}
