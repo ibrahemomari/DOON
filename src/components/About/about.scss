@@ -1,0 +1,42 @@
+@import "../../assets/styles/variables.style.scss";
+.about-section {
+  background-color: $section-color-alt;
+  padding-top: 5em !important;
+  // position: relative;
+  clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+
+  .container {
+    overflow: hidden;
+    .row {
+      .section-title {
+        text-align: center;
+        h2 {
+          font-family: $title-font;
+          font-size: $title-size;
+          span {
+            color: $blood-color;
+          }
+        }
+      }
+      .section-subtitle {
+        p {
+          padding: 1em;
+          text-align: justify;
+          font-size: $subtitle-size;
+        }
+      }
+      .col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .about-info {
+          text-align: center;
+          .about-info-title {
+            font-size: $title-size;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
