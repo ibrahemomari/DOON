@@ -7,7 +7,19 @@ section {
   color: #fff;
   overflow-x: hidden;
 }
+body {
+  ::-moz-selection {
+    color: #fff;
+    background: $blood-color;
+    text-shadow: 0 0 5px yellow;
+  }
 
+  ::selection {
+    color: #fff;
+    background: $blood-color;
+    text-shadow: 0 0 5px yellow;
+  }
+}
 section {
   height: 100vh;
   display: flex;
