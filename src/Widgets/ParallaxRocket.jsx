@@ -12,7 +12,7 @@ function ParallaxRocket() {
     >
       {/* <Container className="para-rocket-container"> */}
        <img
-        src="https://www.shubhvastu.org/public/images/loader3.gif"
+        src={require("../assets/images/rocket.gif")}
         alt=""
         className="rocket-img"
       />

@@ -1,27 +1,88 @@
 @import "../../assets/styles/variables.style.scss";
 
 .qualification-section {
-    position: relative;
+  position: relative;
   margin-top: -19.2em;
+  height: 150vh;
   .container {
-      overflow: hidden;
-      z-index: 5;
+    overflow: hidden;
+    z-index: 5;
     padding: 0;
     max-width: 100%;
     .row:nth-child(1) {
       margin-bottom: 3em;
     }
     .row {
+      .col-xl-2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        .rocket-container {
+          img {
+            position: absolute;
+            width: 15em;
+            top: 0em;
+            left: 0;
+            animation: rocket 5s infinite ease-in-out both;
+          }
+        }
+      }
       .col-xl-6 {
         text-align: center;
-        .qualification-title{
-            color: $blood-color;
+        .qualification-title {
+          margin-bottom: 3em;
+          transition: all 1s;
+          svg {
+            transition: all 1s;
+          }
+        }
+        &:hover .qualification-title,
+        &:hover .qualification-title svg {
+          // text-shadow: 0 0 5px $blood-color;
+          // color: red;
+          filter: drop-shadow(-20px -10px 20px $blood-color);
+          transform: scale(1.1);
         }
         .qualification-data {
+          .qualification-subdata {
+            .qualification-data-title {
+              font-size: $medium-size;
+            }
+            .qualification-subtitle {
+              margin: 0 -0.4em;
+              padding: 0.1em 0.6em;
+              border-radius: 0.8em 0.3em;
+              background: transparent;
+              background-image: linear-gradient(
+                to right,
+                rgba(255, 0, 0, 0.05),
+                rgba(255, 0, 0, 0.7) 10%,
+                rgba(255, 0, 0, 0.3)
+              );
+              -webkit-box-decoration-break: clone;
+              box-decoration-break: clone;
+            }
+          }
           .qualification-path {
+            width: 100%;
             .qualification-rounder {
+              display: block;
+              width: 16px;
+              height: 16px;
+              background-color: #fff;
+              border-radius: 50%;
+              margin: 0 auto;
             }
             .qualification-line {
+              display: block;
+              width: 5px;
+              height: 50px;
+              background-color: #fff;
+              margin: 0 auto;
             }
           }
         }
@@ -45,5 +106,22 @@
     pointer-events: none;
     mix-blend-mode: luminosity;
     // transform: rotateY(180deg);
+  }
+}
+
+@keyframes rocket {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(180deg);
+  }
+
+  10%,
+  20%,
+  30%,
+  40% {
+    transform: translateY(300px) rotate(180deg);
+  }
+  60% {
+    transform: translateY(300px) rotate(90deg);
   }
 }

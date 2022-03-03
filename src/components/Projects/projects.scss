@@ -1,0 +1,186 @@
+@import "../../assets/styles/variables.style.scss";
+
+.projects-section {
+  // background-color: $section-color-alt;
+  // clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+  // filter: drop-shadow(0 0 5px $blood-color);
+
+  .container {
+    max-width: 100%;
+    height: 100%;
+    // background-color: #fff;
+    overflow: hidden;
+    padding: 2em;
+    border:  10px groove rgba($blood-color,0.5 );
+    box-shadow: 0 0 30px 5px rgba($blood-color, 0.5) inset;
+    border-radius: 20px;
+    .row {
+      padding: 0.5em;
+      .col-xl-4,
+      .col-xl-8,
+      .col-xl-5,
+      .col-xl-7,
+      .col-xl-12 {
+        margin: 0em;
+        .card {
+          background-color: rgb(0, 0, 0);
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          overflow: hidden;
+          border-radius: 20px;
+          cursor: pointer;
+          border: none;
+          
+          // box-shadow: 0 0 10px rgba($color: $blood-color, $alpha: 1.0);
+          background-clip: border-box;
+          background-blend-mode: luminosity;
+          transition: all 1s;
+          &:hover {
+            background-blend-mode: normal;
+            .card-title , .card-text{
+              opacity: 0;
+            }
+          }
+          .card-title {
+            // color: black;
+            text-shadow: 0 0 8px black;
+            font-size: $title-size - 0.7;
+            background: linear-gradient(
+                100deg,
+                rgba($blood-color, 0) 0.9%,
+                rgba($blood-color, 1) 2.4%,
+                rgba($blood-color, 0.5) 5.8%,
+                rgba($blood-color, 0.1) 93%,
+                rgba($blood-color, 0.7) 96%,
+                rgba($blood-color, 0) 98%
+              ),
+              linear-gradient(
+                180deg,
+                rgba($blood-color, 0) 0%,
+                rgba(255, 64, 64, 0.3) 7.9%,
+                rgba($blood-color, 0) 15%
+              );
+            border-radius: 0.125em;
+            box-decoration-break: clone;
+            padding: 0.125em 0.25em;
+            transition: 1s;
+          }
+          .card-text {
+            text-shadow: 0 0 8px black;
+            background: linear-gradient(
+                100deg,
+                rgba($blood-color, 0) 0.9%,
+                rgba($blood-color, 1) 2.4%,
+                rgba($blood-color, 0.5) 5.8%,
+                rgba($blood-color, 0.1) 93%,
+                rgba($blood-color, 0.7) 96%,
+                rgba($blood-color, 0) 98%
+              ),
+              linear-gradient(
+                180deg,
+                rgba($blood-color, 0) 0%,
+                rgba(255, 64, 64, 0.3) 7.9%,
+                rgba($blood-color, 0) 15%
+              );
+            border-radius: 0.125em;
+            box-decoration-break: clone;
+            padding: 0.125em 0.25em;
+            font-weight: 500;
+            transition: 1s;
+          }
+          .card-body {
+            border-radius: 20px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.493);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100% !important;
+            bottom: -100%;
+            left: -100%;
+            transition: 1s;
+            h1 {
+              position: absolute;
+              top: 20px;
+              font-size: $title-size - 1;
+            }
+            .gitHub-container,
+            .deploy-container {
+              a {
+                text-decoration: none;
+                font-size: $title-size;
+                color: #fff;
+                transition: 0.5s;
+                &:hover {
+                  transform: scale(1.1);
+                  filter: drop-shadow(-6px -6px 3px rgba(255, 255, 255, 0.473));
+                }
+              }
+            }
+          }
+          &:hover .card-body {
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+    .row:nth-child(1) {
+      height: 40%;
+      .col-xl-5 {
+        // background-color: #fff;
+        & .card {
+          background-image: url("../../assets/images/ProjectsImg/o2art.jpg");
+        }
+      }
+      .col-xl-7 {
+        // background-color: aqua;
+        & .card {
+          background-image: url("../../assets/images/ProjectsImg/craft.jpg");
+        }
+      }
+    }
+    .row:nth-child(2) {
+      height: 30%;
+      .col-xl-4:nth-child(1) {
+        // background-color: rgb(255, 0, 234);
+        & .card {
+          background-image: url("../../assets/images/ProjectsImg/maqrumah.jpg");
+        }
+      }
+      .col-xl-4:nth-child(2) {
+        // background-color: aquamarine;
+        & .card {
+          background-image: url("../../assets/images/ProjectsImg/valorant.jpg");
+        }
+      }
+      .col-xl-4:nth-child(3) {
+        // background-color: rgb(255, 251, 0);
+        & .card {
+          background-image: url("../../assets/images/ProjectsImg/royal.jpg");
+        }
+      }
+    }
+    .row:nth-child(3) {
+      height: 30%;
+      .col-xl-12 {
+        // background-color: rgb(72, 255, 0);
+        & .card {
+          background-image: url("../../assets/images/ProjectsImg/alkalidiah.jpg");
+        }
+      }
+      .col-xl-4 {
+        // background-color: rgb(0, 38, 255);
+        & .card {
+          background-image: url("../../assets/images/ProjectsImg/alkalidiah.jpg");
+        }
+      }
+    }
+  }
+}

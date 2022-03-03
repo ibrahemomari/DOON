@@ -6,6 +6,10 @@ import ParallaxImage from "./Widgets/ParallaxImage";
 import ParallaxRocket from "./Widgets/ParallaxRocket";
 import Skills from "./components/Skills/Skill";
 import Qualification from "./components/Qualification/Qualification";
+import Services from "./components/Services/Services";
+import Marker from "./Widgets/Marker";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
@@ -15,7 +19,11 @@ function App() {
         <ParallaxRocket />
         <About />
         <Skills />
-        <Qualification/>
+        <Qualification />
+        <Marker/>
+        <Services/>
+        <Projects/>
+        <Contact/>
         <section className="x"></section>
       </ParallaxProvider>
     </>

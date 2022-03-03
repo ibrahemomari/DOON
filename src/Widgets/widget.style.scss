@@ -20,7 +20,7 @@
   // border: 1px solid red;
   max-width: 100%;
   // z-index: 10000;
-transition:all 1s;
+  transition: all 1s;
   .row {
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@ transition:all 1s;
         font-weight: 800;
         font-size: 2em;
         margin: 0 1em;
-        transform: rotate(135deg) ;
+        transform: rotate(135deg);
         filter: drop-shadow(-30px 30px 10px rgba($blood-color, 0.8));
       }
     }
@@ -64,5 +64,20 @@ transition:all 1s;
   }
   50% {
     transform: translateY(20px);
+  }
+}
+
+.marker-container {
+  .container {
+    max-width: 100%;
+    .row {
+      .line {
+        height: 0.5em;
+        margin-bottom: 0.5em;
+        background-color: rgba($color: $section-color-alt, $alpha: 0.3);
+        filter: drop-shadow(10px -5px 20px red);
+      }
+      
+    }
   }
 }
