@@ -1,0 +1,101 @@
+@import "../../assets/styles/variables.style.scss";
+
+.contact-section {
+  .container {
+    margin: 0;
+    padding: 0;
+    .row > .section-title {
+      margin-bottom: 5em;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .info-container {
+      .info-item {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        a {
+          margin-left: 1em;
+          text-decoration: none;
+          color: #fff;
+          transition: 0.3s;
+          &:hover {
+            color: gray;
+          }
+        }
+        svg {
+          color: rgba($color: #fff, $alpha: 1);
+          filter: drop-shadow(
+            -0px -0px 10px rgba($color: $blood-color, $alpha: 1)
+          );
+        }
+      }
+    }
+    .form-container {
+      // border: 1px dotted blue;
+      text-align: center;
+      .form-control {
+        background-color: transparent;
+        color: #fff;
+        border-color: $blood-color;
+        height: 3em;
+        &:focus {
+          box-shadow: 0 0 10px $blood-color;
+        }
+      }
+      .btn {
+        font-weight: 600;
+        // background-color: #fff;
+        color: #fff;
+        border-color: #fff;
+        background: linear-gradient(
+            45deg,
+            $blood-color 10%,
+            rgba(255, 4, 4, 0.103) 50%
+          )
+          right;
+        background-size: 200%;
+        transition: 0.5s;
+        &:hover {
+          background-position: left;
+          border-color: $blood-color;
+          transform: scale(1.05);
+          svg {
+            transform: translateX(10px);
+          }
+        }
+        svg {
+          transition: 1s;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+.swal2-container {
+  .swal2-popup {
+    background-color: $blood-color !important;
+    box-shadow: 0 0 20px $blood-color;
+  }
+  .swal2-success-circular-line-left,
+  .swal2-success-circular-line-right,
+  .swal2-success-fix {
+    background-color: $blood-color !important;
+  }
+  .swal2-success-ring {
+    border-color: #fff !important;
+  }
+  .swal2-success-line-tip,
+  .swal2-success-line-long {
+    background-color: #fff !important;
+  }
+  .swal2-title,.swal2-html-container {
+    color: #fff;
+  }
+  .swal2-confirm{
+    background-color: rgb(248, 248, 248) !important;
+    color: black !important;
+  }
+}
