@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
 // fonts
 $main-font: "Space Mono", monospace;
 $name-font: "Press Start 2P", cursive;
+$logo-font:'Lobster Two', cursive;
 $title-font: "ZCOOL QingKe HuangYou", cursive;
 $title-size: 2.5em;
 $subtitle-size: 1.2em;
 $medium-size: 1.35em;
 // colors
 $blood-color: #ff022c;
-$section-color-alt: rgb(56, 56, 56);
+$section-color-alt: #383838;
