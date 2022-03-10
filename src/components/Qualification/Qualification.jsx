@@ -10,7 +10,7 @@ function Qualification() {
   return (
     <>
       {/* <Parallax translateY={[-20, 40]} id="qualification-prlx"> */}
-      <section className="qualification-section">
+      <section className="qualification-section" id="qualification">
         <Container>
           <Row>
             <Fade right>

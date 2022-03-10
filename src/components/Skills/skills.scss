@@ -2,7 +2,17 @@
 
 .skills-section {
   background-color: $section-color-alt;
-  clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+  // clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+  margin-bottom: 15em;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -9em;
+    background: url("../../Widgets/waveR.svg");
+    background-size: 100%;
+    width: 100%;
+    height: 10em;
+  }
   .skills-item-container {
     padding: 0 1em 5em 0em;
     .col-xl-4 {

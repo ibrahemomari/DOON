@@ -77,13 +77,13 @@ function Home() {
             ></Typed>
           </div>
         </Container>
+        {showCursor && (
+          <div
+            className="curs"
+            style={{ top: `${cursTop - 30}px`, left: `${cursLeft - 150}px` }}
+          ></div>
+        )}
       </section>
-      {showCursor && (
-        <div
-          className="curs"
-          style={{ top: `${cursTop - 30}px`, left: `${cursLeft - 30}px` }}
-        ></div>
-      )}
     </>
   );
 }

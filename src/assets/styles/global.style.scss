@@ -8,6 +8,7 @@ section {
   overflow-x: hidden;
 }
 body {
+  font-family: $main-font;
   ::-moz-selection {
     color: #fff;
     background: $blood-color;
@@ -39,3 +40,17 @@ section {
     }
   }
 }
+
+.app-container {
+  max-width: 100%;
+  .row {
+    .col-xl-1,.col-xl-11{
+      padding: 0;
+      margin: 0;
+    }
+    .col-xl-1 {
+      border-right: 2px solid rgba(43, 43, 43, 0.473);
+    }
+  }
+}
+

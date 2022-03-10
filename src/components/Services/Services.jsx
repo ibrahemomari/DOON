@@ -7,7 +7,7 @@ import { SiMaterialdesignicons } from "react-icons/si";
 function Services() {
   return (
     <>
-      <section className="services-section">
+      <section className="services-section" id="services">
         <Container>
           <Fade top cascade>
             <Row>
