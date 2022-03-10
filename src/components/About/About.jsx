@@ -35,27 +35,27 @@ function About() {
             </Row>
             <Row>
               <Col>
-              <Fade>
-                <div className="about-info">
-                  <div className="about-info-title">01+</div>
-                  <span className="about-info-name">Years experience</span>
-                </div>
+                <Fade>
+                  <div className="about-info">
+                    <div className="about-info-title">01+</div>
+                    <span className="about-info-name">Years experience</span>
+                  </div>
                 </Fade>
               </Col>
               <Col>
-              <Fade>
-                <div className="about-info">
-                  <div className="about-info-title">5+</div>
-                  <span className="about-info-name">Completed project</span>
-                </div>
+                <Fade>
+                  <div className="about-info">
+                    <div className="about-info-title">5+</div>
+                    <span className="about-info-name">Completed project</span>
+                  </div>
                 </Fade>
               </Col>
               <Col>
-              <Fade>
-                <div className="about-info">
-                  <div className="about-info-title">04+</div>
-                  <span className="about-info-name">Completed worked</span>
-                </div>
+                <Fade>
+                  <div className="about-info">
+                    <div className="about-info-title">04+</div>
+                    <span className="about-info-name">Completed worked</span>
+                  </div>
                 </Fade>
               </Col>
             </Row>

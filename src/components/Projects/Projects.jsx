@@ -27,7 +27,7 @@ function Projects() {
   );
   return (
     <>
-      <Parallax translateY={(-20, 20)} scale={[2, 0]}>
+      <Parallax translateY={(10, 60)} speed={-5}  >
         <Row>
           <Fade right>
             <div className="section-title">
@@ -37,7 +37,7 @@ function Projects() {
             </div>
           </Fade>
         </Row>
-        <section className="projects-section">
+        <section className="projects-section"  id="projects">
           <Container>
             <Row>
               <Col xl={5}>
@@ -268,12 +268,10 @@ function Projects() {
                   </Card.Body>
                 </Card>
               </Col>
-              
             </Row>
           </Container>
         </section>
       </Parallax>
-
     </>
   );
 }

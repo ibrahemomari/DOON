@@ -34,17 +34,17 @@ function Contact() {
         (error) => {
           console.log(error.text);
           Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
-          })
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+          });
         }
       );
-      e.target.reset();
+    e.target.reset();
   };
   return (
     <>
-      <section className="contact-section">
+      <section className="contact-section" id="contact">
         <Container>
           <Row>
             <Fade right>
@@ -60,6 +60,7 @@ function Contact() {
               <Col xl={5} className="info-container">
                 <div className="info-item">
                   <FaWhatsapp />
+                  <span>Send on whatsapp </span>
                   <a
                     href="https://wa.me/962792914176?text=Hi, Mr.IBRAHEM "
                     target="_blank"
@@ -69,12 +70,14 @@ function Contact() {
                 </div>
                 <div className="info-item">
                   <IoMdMail />
+                  <span>Email</span>
                   <a href="mailto:ibrahem.omari96@gmail.com" target="_blank">
                     ibrahem.omari96@gmail.com
                   </a>
                 </div>
                 <div className="info-item">
                   <AiFillLinkedin />
+                  <span>LinkedIn</span>
                   <a
                     href="https://www.linkedin.com/in/ibrahem-al-omari-5967a5198/"
                     target="_blank"

@@ -1,0 +1,51 @@
+@import "../../assets/styles/variables.style.scss";
+
+.list-container {
+  max-width: 100% !important;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  transition: 1s;
+  &:hover {
+  }
+  .row {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    .nav-list {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          margin: 4em 0;
+          transition: 0.5s;
+          .active {
+            color: #fff;
+            text-shadow: 0 0 5px #fff;
+          }
+          a {
+            font-size: 0.75em;
+            text-decoration: none;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.226);
+            transition: 0.5s;
+          }
+          &:hover {
+            transform: scale(1.1);
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
