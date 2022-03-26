@@ -11,7 +11,7 @@ import { Parallax } from "react-scroll-parallax";
 function Footer() {
   return (
     <>
-      <Parallax translateX={[-100, 100]}>
+      <Parallax translateY={[-100, 100]}>
         <section className="footer">
           <Container>
             <Row>
@@ -84,6 +84,11 @@ function Footer() {
                 alomari
               </h2>
             </Parallax>
+          </div>
+          <div className="footer-copyright">
+            <p>
+              &copy;2022 <span> I.H.O</span>
+            </p>
           </div>
         </section>
       </Parallax>

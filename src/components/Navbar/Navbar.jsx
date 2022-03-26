@@ -22,7 +22,8 @@ function Navbar() {
       <Container className="list-container">
         <Row>
           <div className="nav-list">
-            <ul>
+            <label htmlFor="list"><div className="line"></div><span>I.H.O</span></label>
+            <ul id="list">
               <li>
                 <a href="#about" className="link">
                   About

@@ -9,8 +9,6 @@
   height: 100vh;
 
   transition: 1s;
-  &:hover {
-  }
   .row {
     position: fixed;
     text-align: center;
@@ -19,6 +17,26 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    label{
+      font-family: $name-font;
+      margin-top: 1.5em;
+      font-size: 0.6em;
+      outline: 1px dashed rgb(167, 167, 167);
+      outline-offset: 5px;
+      border-radius: 2px;
+      color: rgb(163, 162, 162);
+      overflow: hidden;
+      position: relative;
+      .line{
+        
+        position: absolute;
+        width: 1px;
+        border-right: 5px solid rgba(0, 0, 0, 0.74);
+        height: 100%;
+        background-color: rgba(197, 194, 194, 0);
+        animation: logoText 20s ease-in-out  infinite  ;
+      }
+    }
     .nav-list {
       ul {
         list-style: none;
@@ -47,5 +65,15 @@
         }
       }
     }
+  }
+}
+
+@keyframes logoText {
+  0%,100%{
+    transform:translateX(0px)  skew(30deg, 20deg);
+  }
+  50%{
+    transform:translateX(50px) scale(1.5) skew(30deg, 20deg);
+    
   }
 }

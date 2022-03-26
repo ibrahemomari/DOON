@@ -4,7 +4,50 @@
   height: 100vh;
   position: relative;
   z-index: 0 !important;
+  overflow: hidden;
+  .shapes-container {
+    background-color: #ffffff00;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    img {
+      width: 8em !important;
+      opacity: 0.5;
+      transform: translateX(50px);
+    }
+    @for $i from 1 to 15 {
+      img:nth-child(n + #{$i}) {
+        animation: svg#{$i} 40s ease-in-out infinite both;
+      }
+    }
 
+    @for $i from 1 to 15 {
+      @keyframes svg#{$i} {
+        0%,
+        100% {
+          transform: rotate(random($i) * 2 + deg) scale(0.2 + $i * 0.01)
+            translateY((random(900)) + px) translateX(random(1000) + px);
+          opacity: random(1) * 0.05;
+        }
+        25% {
+          transform: rotate(random($i) * (-1) * 50 + deg) scale(0.3 + $i * 0.1)
+            translateY((random(800)) + px) translateX(random(900) + px);
+          opacity: random(10) * 0.1;
+        }
+        50% {
+          transform: rotate(random($i) * (-1) * 1 + deg) scale(0.3 + $i * 0.1)
+            translateY((random(800)) + px) translateX(random(900) + px);
+          opacity: random(10) * 0.1;
+        }
+        75% {
+          transform: rotate(random($i) * 2 + deg) scale(0.2 + $i * 0.1)
+            translateY((random(100)) + px) translateX(random(1200) + px);
+          opacity: random(10) * 0.1;
+        }
+      }
+    }
+  }
   .container {
     max-width: 100%;
     height: 100%;
@@ -91,6 +134,35 @@
   // &:hover .curs{
   //   display: none;
   // }
+  .background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: -10em;
+    z-index: 20;
+    filter: grayscale(100%);
+    .mounts {
+      width: 100%;
+      height: 100vh;
+      background: url("https://assets.codepen.io/721952/mountFg.png"),
+        url("https://assets.codepen.io/721952/mountMg.png"),
+        url("https://assets.codepen.io/721952/mountBg.png");
+      background-size: 100% 100%;
+      background-position: center;
+      background-attachment: fixed;
+      overflow: hidden;
+      .clouds1 {
+        width: 100%;
+        height: 100%;
+        background: url("https://assets.codepen.io/721952/cloud3.png");
+        // url("https://assets.codepen.io/721952/cloud2.png"),
+        // url("https://assets.codepen.io/721952/cloud3.png");
+        background-size: cover;
+        background-position: center;
+      }
+      
+    }
+  }
 }
 .x {
   height: 100vh;

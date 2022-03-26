@@ -4,12 +4,9 @@ import { Container } from "react-bootstrap";
 import "./about.scss";
 import Typed from "react-typed";
 import Fade from "react-reveal/Fade";
-import RocketSvg from "../../assets/images/svg/rocket-ship-svgrepo-com.svg";
-import { Parallax } from "react-scroll-parallax";
 function About() {
   return (
     <>
-      <Parallax translateY={[-50, -50]} speed={5}>
         <section className="about-section" id="about">
           <Container>
             <Row>
@@ -61,7 +58,6 @@ function About() {
             </Row>
           </Container>
         </section>
-      </Parallax>
     </>
   );
 }

@@ -9,7 +9,6 @@ import { Fade } from "react-reveal";
 function Qualification() {
   return (
     <>
-      {/* <Parallax translateY={[-20, 40]} id="qualification-prlx"> */}
       <section className="qualification-section" id="qualification">
         <Container>
           <Row>
@@ -135,7 +134,6 @@ function Qualification() {
 
         <video src={require("./earth.mp4")} muted autoPlay loop></video>
       </section>
-      {/* </Parallax> */}
     </>
   );
 }
