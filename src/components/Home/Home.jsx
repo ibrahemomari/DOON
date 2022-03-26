@@ -39,11 +39,43 @@ function Home() {
         className="section home-section"
         id="homeSection"
         style={{
-          filter: `hue-rotate(${scrollY}deg) grayscale(${scrollY}%) blur(${
-            scrollY / 50
-          }px)`,
+          filter: `hue-rotate(${scrollY}deg) grayscale(${scrollY}%)`,
         }}
       >
+        <div className="shapes-container">
+          <img
+            src={require("../../assets/images/svg/space1.svg").default}
+            alt="svgs"
+          />
+          <img
+            src={require("../../assets/images/svg/space2.svg").default}
+            alt="svgs"
+          />
+          <img
+            src={require("../../assets/images/svg/space3.svg").default}
+            alt="svgs"
+          />
+          <img
+            src={require("../../assets/images/svg/space4.svg").default}
+            alt="svgs"
+          />
+          <img
+            src={require("../../assets/images/svg/space1.svg").default}
+            alt="svgs"
+          />
+          <img
+            src={require("../../assets/images/svg/space2.svg").default}
+            alt="svgs"
+          />
+          <img
+            src={require("../../assets/images/svg/space3.svg").default}
+            alt="svgs"
+          />
+          <img
+            src={require("../../assets/images/svg/space4.svg").default}
+            alt="svgs"
+          />
+        </div>
         <Particles id="tsparticles" options={ParticlesOptions} />
         <Container>
           <Row>
@@ -83,6 +115,21 @@ function Home() {
             style={{ top: `${cursTop - 30}px`, left: `${cursLeft - 150}px` }}
           ></div>
         )}
+        {/* <div className="background">
+          <div
+            className="mounts"
+            style={{ transform: `translateY(-${scrollY}px)` }}
+          >
+            <div
+              className="clouds1"
+              style={{ transform: `translateY(-${scrollY}px)` }}
+            ></div>
+            <div
+              className="clouds2"
+              style={{ transform: `translateY(-${scrollY}px)` }}
+            ></div>
+          </div>
+        </div> */}
       </section>
     </>
   );

@@ -15,6 +15,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
 import { useEffect, useState } from "react";
+import ReactPageScroller from "react-page-scroller";
 function App() {
   const [percentage, setPercentage] = useState(0);
   const [enter, setEnter] = useState(
@@ -32,8 +33,10 @@ function App() {
     setEnter(value);
   };
   useEffect(() => {
-    if(localStorage.getItem("intro")==="false" || localStorage.getItem("intro")=== null){
-
+    if (
+      localStorage.getItem("intro") === "false" ||
+      localStorage.getItem("intro") === null
+    ) {
       percentageHandler(1);
     }
   }, []);
@@ -50,20 +53,27 @@ function App() {
               </Col>
               <Col xl={11}>
                 <Home />
-                <ParallaxImage />
-                <About />
-                <Skills />
-                <Qualification />
-                <Marker />
-                <Services />
-                <Projects />
-                <Contact />
+                  <About />
+
+                  <Skills />
+
+                  <Qualification />
+
+                  <Marker />
+
+                  <Services />
+
+                  <Projects />
+
+                  <Contact />
+
                 <ParallaxRocket />
-                <section className="x"></section>
+                <Footer />
+                {/* <section className="x"></section> */}
               </Col>
             </Row>
           </Container>
-          <Footer />
+          
         </ParallaxProvider>
       )}
     </>

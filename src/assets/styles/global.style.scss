@@ -2,7 +2,7 @@
 html,
 body,
 section {
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   background-color: black;
   color: #fff;
   overflow-x: hidden;
@@ -20,13 +20,13 @@ body {
     background: $blood-color;
     text-shadow: 0 0 5px yellow;
   }
-
 }
 section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1em 0;
 }
 
 .row {
@@ -45,7 +45,8 @@ section {
 .app-container {
   max-width: 100%;
   .row {
-    .col-xl-1,.col-xl-11{
+    .col-xl-1,
+    .col-xl-11 {
       padding: 0;
       margin: 0;
     }
@@ -54,4 +55,3 @@ section {
     }
   }
 }
-

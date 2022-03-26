@@ -68,7 +68,6 @@ const skillsArr = [
 function Skill() {
   return (
     <>
-      <Parallax translateY={[-47.5, -50]} speed={-5}>
         <section className="skills-section" id="skills">
           <Container>
             <Row>
@@ -102,7 +101,6 @@ function Skill() {
             </Row>
           </Container>
         </section>
-      </Parallax>
     </>
   );
 }

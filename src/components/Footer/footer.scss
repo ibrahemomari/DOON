@@ -22,8 +22,6 @@
       .col-xl-6 {
         text-align: center;
         .social-container {
-          h3 {
-          }
           ul {
             li {
               display: inline-block;
@@ -47,6 +45,27 @@
             }
           }
         }
+      }
+    }
+  }
+  .footer-copyright{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: 20;
+    p{
+      font-family:$main-font;
+      letter-spacing: 2px;
+      font-size: 0.7em;
+      color: rgba(255, 255, 255, 0.514);
+      svg{
+        color: #fff;
+      }
+      span{
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.808);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.445);
+        font-size: 1.5em;
       }
     }
   }
@@ -352,16 +371,16 @@
   }
 }
 
-.footer-name{
+.footer-name {
   position: absolute;
   right: 0%;
   top: 15%;
   transform: rotate(-45deg);
   opacity: 0.1;
   z-index: 50;
-  h2{
+  h2 {
     // text-shadow: 0 0 1px black;
-    filter: drop-shadow(0 0 10px  rgb(253, 253, 253));
+    filter: drop-shadow(0 0 10px rgb(253, 253, 253));
     text-shadow: 0 0 10px black;
     text-transform: uppercase;
     font-family: $main-font;
