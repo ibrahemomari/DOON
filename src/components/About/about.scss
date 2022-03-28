@@ -5,8 +5,37 @@
   position: relative;
   // position: relative;
   // clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
-
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    100% 100%,
+    0 100%,
+    0% 80%,
+    0% 20%
+  );
+  &::after {
+    content: "";
+    width: 80%;
+    height: 10%;
+    // background-color: rgb(66, 66, 66);
+    position: absolute;
+    bottom: 0;
+    border-radius: 50px 50px 0px 0px;
+    background: url("../../assets/images/[CITYPNG.COM]Download\ White\ Brush\ Effect\ PNG\ -\ 3724x2601.png");
+    animation: bg-pan-tr 19s infinite both;
+    border: 1px solid rgba(128, 128, 128, 0.226) ;
+    border-bottom: none ;
+  }
+  @keyframes bg-pan-tr {
+    0% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
   .container {
     overflow: hidden;
     .row {
