@@ -41,10 +41,15 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
+
+                <p className="quote">
+                  “Learn as if you will live forever, live like you will die
+                  tomorrow.”
+                  <br /> <span> — Mahatma Gandhi —</span>
+                </p>
               </Col>
               <Col xl={6}></Col>
             </Row>
-            <Row></Row>
           </Container>
           <div className="rocket-div">
             <div class="rocket">

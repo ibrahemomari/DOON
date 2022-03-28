@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
 import { useEffect, useState } from "react";
 import ReactPageScroller from "react-page-scroller";
+import NavbarSM from "./components/Navbar/NavbarSM";
 function App() {
   const [percentage, setPercentage] = useState(0);
   const [enter, setEnter] = useState(
@@ -47,25 +48,26 @@ function App() {
       ) : (
         <ParallaxProvider>
           <Container className="app-container">
+          <NavbarSM/>
             <Row>
               <Col xl={1}>
                 <Navbar />
               </Col>
               <Col xl={11}>
                 <Home />
-                  <About />
+                <About />
 
-                  <Skills />
+                <Skills />
 
-                  <Qualification />
+                <Qualification />
 
-                  <Marker />
+                <Marker />
 
-                  <Services />
+                <Services />
 
-                  <Projects />
+                <Projects />
 
-                  <Contact />
+                <Contact />
 
                 <ParallaxRocket />
                 <Footer />
@@ -73,7 +75,6 @@ function App() {
               </Col>
             </Row>
           </Container>
-          
         </ParallaxProvider>
       )}
     </>

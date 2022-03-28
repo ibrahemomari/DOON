@@ -1,0 +1,23 @@
+@import "./variables.style.scss";
+
+// small devices
+@media (min-width: 200px) and (max-width: 690px) {
+  // navbar
+  .list-container {
+    display: none;
+  }
+}
+
+// medium devices
+@media (min-width: 700px) and (max-width: 1200px) {
+    .list-container {
+        display: none;
+      }
+}
+
+// large devices
+@media (min-width: 1250px) {
+    .navbar-sm{
+        display: none;
+    }
+}
